@@ -2,10 +2,14 @@
 using namespace std;
 
 int main() {
-    int n;
-    cout<<"Enter the number";
-    cin>>n;
-
+    int n1,n2;
+   cout<<"Enter the first number of range";
+   cin>>n1;
+   cout<<"Enter the second number of range";
+   cin>>n2;
+   
+   for(int i= n1;i<=n2;i++){
+    int n =i;
 
     string s= to_string(n);
     int size = s.size();
@@ -17,11 +21,8 @@ int main() {
         n=n/10;
     }
     if(originaln == sum){
-        cout<<"This is a Armstrong Number";
+        cout<<originaln<<" ";
     }
-    else{
-    cout<<"This is not a armstrong Number";
-    }
-    
+}
     return 0;
 }
